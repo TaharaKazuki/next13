@@ -32,11 +32,25 @@ const Page = ({ params }: PostPageProps) => {
       <PostHero post={post} />
       <div className="mt-10 flex gap-10">
         <div className="relative">
-          <div className="sticky top-20">
+          <div className="sticky top-20 flex flex-col gap-5">
             <SocialLink
               isShareURL
               platform="facebook"
               link={`https://www.facebook.com/sharer/sharer/php?u=${
+                'http://localhost:3000' + `/post/${post.slug}`
+              }`}
+            />
+            <SocialLink
+              isShareURL
+              platform="x"
+              link={`https://twitter.com/intent/tweet?url=${
+                'http://localhost:3000' + `/post/${post.slug}`
+              }`}
+            />
+            <SocialLink
+              isShareURL
+              platform="linkedin"
+              link={`https://www.linkedin.com/shareArticle?mini=true&url=${
                 'http://localhost:3000' + `/post/${post.slug}`
               }`}
             />
