@@ -16,6 +16,7 @@ const PostContent = ({ isPostPage = false, post }: PostContentProps) => {
       <div
         className={ctl(
           `flex 
+           flex-wrap
            items-center 
            gap-2 
            text-neutral-400

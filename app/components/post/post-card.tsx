@@ -31,7 +31,7 @@ const PostCard = ({
       {/* {post.title} */}
       <Image
         className={ctl(
-          `max-h-[300px] w-full rounded-md object-cover object-center ${
+          `h-full max-h-[300px] w-full rounded-md object-cover object-center ${
             reverse ? 'md:order-last' : ''
           }`,
         )}
